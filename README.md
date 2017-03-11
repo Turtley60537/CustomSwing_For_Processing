@@ -5,8 +5,10 @@ SwingGUIを表示の手間を裏で行う事で、Processingのtext()やellipse(
   
 このプログラムにおいては、PButton（JButtonを継承したもの）のようにGUIの名前をつけています。  
   
-現在は、PButton, PTextArea, PLabelを実装しています。
+現在は、PButton, PTextArea, PLabelを実装しています。  
   
+より細かい設定をしたいときは、Swingのそれぞれのリファレンスを読む事をお勧めします。
+  
 ## How to use
 ### PButton
 PButton("ボタンの名前", 左上x座標, 左上y座標, 幅, 高さ, 匿名のActionListenerクラス);  
