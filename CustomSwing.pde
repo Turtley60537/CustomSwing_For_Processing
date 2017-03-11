@@ -22,20 +22,21 @@ class SwingGUI {
   }
 }
 
+
 class PButton extends JButton {
   SwingGUI gui;
 
   PButton(String _name, int _x, int _y, int _w, int _h, ActionListener _actionListener) {
     super();
-
     gui = new SwingGUI();
 
-    this.setText(_name);
-    this.setBounds(_x, _y, _w, _h);
-    this.addActionListener( _actionListener );
+    this.setText           ( _name           );
+    this.setBounds         ( _x, _y, _w, _h  );
+    this.addActionListener ( _actionListener );
     gui.add(this);
   }
 }
+
 
 class PTextArea extends JTextArea {
   SwingGUI gui;
@@ -43,27 +44,27 @@ class PTextArea extends JTextArea {
 
   PTextArea(int _x, int _y, int _w, int _h) {
     super();
-
     gui = new SwingGUI();
 
-    this.setLineWrap(true);
-    this.setWrapStyleWord(true);
+    this.setLineWrap      (true);
+    this.setWrapStyleWord (true);
+    
     scrollPane = new JScrollPane(this);
-    scrollPane.setBounds(_x, _y, _w, _h);
+    scrollPane.setBounds( _x, _y, _w, _h );
     gui.add(scrollPane);
   }
 }
+
 
 class PLabel extends JLabel {
   SwingGUI gui;
 
   PLabel(String _text, int _x, int _y, int _w, int _h) {
     super();
-
     gui = new SwingGUI();
 
-    this.setText(_text);
-    this.setBounds(_x, _y, _w, _h);
+    this.setText  ( _text          );
+    this.setBounds( _x, _y, _w, _h );
     gui.add(this);
   }
 }
