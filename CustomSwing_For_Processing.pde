@@ -15,11 +15,10 @@ void setup() {
 
   pButton   = new PButton("hoge", 50, 200, 200, 100, new ActionListener() {
     @Override
-      public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent e) {
       //ここにボタンを押した時の処理内容を記述
     }
-  }
-  );
+  });
 
 
   //PTextAreaはJTextAreaを継承したもの
