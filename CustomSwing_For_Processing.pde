@@ -13,7 +13,7 @@ void setup() {
   //ボタンが押された時に一度だけ実行されるメソッド
   //記述方法: MyButton( "ボタン名", 左上x座標, 左上y座標, 幅, 高さ, イベント駆動のActionListenerクラス )
 
-  pButton   = new PButton("hoge", 50, 200, 200, 100, new ActionListener() {
+  pButton = new PButton("hoge", 50, 200, 200, 100, new ActionListener() {
     @Override
     public void actionPerformed(ActionEvent e) {
       //ここにボタンを押した時の処理内容を記述
@@ -30,7 +30,7 @@ void setup() {
   //PTextLabelはJLabelを継承したもの
   //記述方法: new PLabel("ラベル文字", 左上x座標, 左上y座標, 幅, 高さ)
   
-  pLabel    = new PLabel("fuga", 50, 300, 200, 100);
+  pLabel = new PLabel("fuga", 50, 300, 200, 100);
 }
 
 void draw() {
