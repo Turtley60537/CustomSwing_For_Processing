@@ -6,7 +6,7 @@ import processing.awt.PSurfaceAWT;
 import java.awt.event.MouseEvent;
 
 class SwingGUI {
-  Canvas canvas = (Canvas) surface.getNative();
+  Canvas canvas     = (Canvas) surface.getNative();
   JLayeredPane pane = (JLayeredPane) canvas.getParent().getParent();
 
   void add(PButton _button) {
