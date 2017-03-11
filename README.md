@@ -9,6 +9,8 @@ SwingGUIを表示の手間を裏で行う事で、Processingのtext()やellipse(
   
 ## How to use
 ### PButton
+PButton("ボタンの名前", 左上x座標, 左上y座標, 幅, 高さ, 匿名のActionListenerクラス);  
+ActionListenerクラスのactionPerformed(ActionEvent e)内にボタン操作時の処理内容を記述  
 ```processing:PButton.pde
 PButton pButton;
 
@@ -21,7 +23,9 @@ void setup(){
  });
 }
 ```
+  
 ### PTextArea
+PTextArea(左上x座標, 左上y座標, 幅, 高さ);  
 ```processing:PTextArea.pde
 PTextArea pTextArea;
 
@@ -29,7 +33,9 @@ void setup(){
  pTextArea = new PTextArea(100, 100, 200, 100);
 }
 ```
+  
 ### PLabel
+PLabel("表示する文字列", 左上x座標, 左上y座標, 幅, 高さ);  
 ```processing:PLabel.pde
 PLabel plabel;
 
